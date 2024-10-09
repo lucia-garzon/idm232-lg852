@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; 
+    /* padding: 10px;  */
+    /* text-align: center; */
+}
+
+.hero-image {
+    margin: 0 auto;
+    width: 100%;
+}
