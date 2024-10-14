@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Detail - The Secret Ingredient</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" alt="logo" src="images/Recipe-logo.svg"></a>
+        <nav class="nav">
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            </ul>
+        <div class="search-icon">
+            <img src="images/search-icon.svg" alt="Search Icon">
+        </div>
+        </nav>
+    </header>
+    <main class="container">
+    <!-- Recipe Title Section -->
+    <section class="recipe-header">
+        <h1>Recipe Title</h1>
+        <p class="subtitle">Subtitle</p>
+        <button class="jump-button">Jump to recipe</button>
+    </section>
+
+    <!-- Recipe Image Section -->
+    <section class="recipe-main-info">
+        <div class="main-image">
+        <img src="https://via.placeholder.com/600x300" alt="Recipe Image">
+        </div>
+        <div class="recipe-meta">
+        <div class="meta-item">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="none"/>
+            <line x1="12" y1="7" x2="12" y2="12" stroke="black" stroke-width="2"/>
+            <line x1="12" y1="12" x2="15" y2="15" stroke="black" stroke-width="2"/>
+            </svg>
+        X MIN
+        </div>
+        <div class="meta-item">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+            <line x1="2" y1="2" x2="22" y2="22" stroke="black" stroke-width="2"/>
+            <line x1="2" y1="22" x2="22" y2="2" stroke="black" stroke-width="2"/>
+        </svg>
+        X Servings
+        </div>
+    </div>
+    </section>
+
+    <!-- Description Section with Show More/Show Less -->
+    <section class="description-section">
+        <div class="description">
+        <p class="description-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis 
+            mauris nec dolor volutpat, nec lobortis nulla pretium. Integer posuere felis 
+            id mi vehicula varius. Etiam sagittis ante in mauris euismod, sed facilisis 
+            odio pharetra. Morbi vehicula ex a malesuada suscipit. Ut volutpat odio 
+            id leo tempus, sed condimentum enim lobortis. Curabitur ac sem urna.
+        </p>
+        </div>
+        <button class="show-more-btn">Show more</button>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="ingredients-section">
+        <h2>Ingredients</h2>
+        <div class="ingredients-grid">
+            <img src="https://via.placeholder.com/150" alt="Ingredients Image">
+            <ul>
+                <li>List</li>
+                <li>Of</li>
+                <li>Ingredients</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <h2>Steps</h2>
+        <div class="step">
+            <div class="step-number">1</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <img src="https://via.placeholder.com/150" alt="Step Image">
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <img src="https://via.placeholder.com/150" alt="Step Image">
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <img src="https://via.placeholder.com/150" alt="Step Image">
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
