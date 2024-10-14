@@ -6,6 +6,50 @@
     <title>Recipes</title>
 </head>
 <body>
+    <header>
+        <div><img class="logo" alt="logo" src="images/Recipe-logo.svg"></div>
+        <nav class="nav">
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            </ul>
+        <div class="search-icon">
+            <img src="images/search-icon.svg" alt="Search Icon">
+        </div>
+        </nav>
+        
+    </header>
+    <main class="recipe-container">
+        <section class="heading">
+            <h1>Recipes</h1>
+            <p>Subtitle</p>
+        </section>
     
+        <section class="search-filter">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for recipes" />
+                <button class="search-icon">🔍</button>
+            </div>
+            <button class="filter-btn">Filter ▼</button>
+        </section>
+    
+        <section class="recipe-grid">
+        <!-- Repeat this block for each recipe card -->
+            <article class="recipe-card">
+            <div class="recipe-image">
+                <img src="images/placeholder.svg" alt="Recipe Image">
+            </div>
+            <div class="recipe-info">
+                <h3>Title</h3>
+                <p>Subtitle</p>
+                <div class="recipe-time">
+                ⏲️ X MIN
+                </div>
+            </div>
+            </article>
+        <!-- End of recipe card -->
+        </section>
+    </main>
 </body>
 </html>
