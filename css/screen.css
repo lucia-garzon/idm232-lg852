@@ -154,11 +154,40 @@ ul li {
     /* text-align: center; */
 }
 
+/*  index    index     index      index     index */
 .hero-image {
     display: block;
     margin: 0 auto;
-    width: 50%;
-    margin-top: 3vh;
+    max-width: 100%;
+    height: 666px;
+}
+.quick-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    overflow-x: auto;
+}
+.filters-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.filter-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+.filter-circle img {
+    width: 60px;
+    height: 60px;
+}
+.all-recipes {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
