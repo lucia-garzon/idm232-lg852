@@ -232,6 +232,57 @@ ul li {
     font-size: 14px;
 }
 
+/* Offerings Section */
+.offerings {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.index-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.index-card {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+.index-card-image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.see-all {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive for Small Screens */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
   /* Link for All Recipes (Ensures Proper Clickable Area) */
 .all-recipes img {
     cursor: pointer;
