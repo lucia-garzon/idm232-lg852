@@ -264,12 +264,16 @@ main {
 }
 .filters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(128px, 128px));
-    gap: 16px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(128px,1fr));
+    gap: 14px;
+    max-width: 420px;
     margin: 0 auto;
 }
-
+@media screen and (min-width:768px) {
+    .filters-grid {
+        max-width: 900px;
+    }
+}
   /* Circle Filters */
 .filter-circle {
     display: flex;
