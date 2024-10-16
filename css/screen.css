@@ -217,7 +217,7 @@ main {
 }
 
 /*  index    index     index      index     index */
-.hero-image {
+/* .hero-image {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -226,8 +226,101 @@ main {
     .hero-image {
         max-width: 90%;
     }
+} */
+/* Hero Section Styles */
+.hero-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hero Grid */
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Hero Item */
+.hero-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+/* Hero Info Overlay */
+.hero-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.hero-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.hero-info p {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Hero Button */
+.hero-btn {
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .wide {
+        grid-column: span 1;
+    }
+
+    .hero-info {
+        bottom: 5px;
+        left: 5px;
+        padding: 6px 8px;
+    }
+}
 
 /* Responsive Grid */
 .quick-filters {
