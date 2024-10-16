@@ -42,8 +42,16 @@ header {
 
 
 /* Navigation Styling */
-.logo img {
+.logo {
     max-height: 44px;
+    margin-top: 8px;
+}
+@media (max-width: 768px) {
+    .logo { 
+        width: 45vw;
+        margin: 0 auto;
+        margin-top: 8px;
+    }
 }
 .nav {
     display: flex;
@@ -92,9 +100,6 @@ header {
 }
 
 @media (max-width: 480px) {
-    .logo {
-        font-size: 1.2rem;
-    }
 
     .header {
         padding: 10px 20px;
@@ -151,6 +156,7 @@ ul li {
     left: 50%;
     transform: translate(-50%, -50%); /* Center the text */
     color: white; 
+    margin: 0 auto;
     /* padding: 10px;  */
     /* text-align: center; */
 }
@@ -159,7 +165,12 @@ ul li {
 .hero-image {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .hero-image {
+        max-width: 90%;
+    }
 }
 /* }
 .quick-filters {
