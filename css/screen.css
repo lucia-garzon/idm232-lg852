@@ -45,6 +45,12 @@ header {
 .logo {
     max-height: 44px;
     margin-top: 8px;
+    /* position: fixed;
+    top: 40px;
+    left: 46.7px;
+    cursor: pointer;
+    z-index: 99; */
+
 }
 @media (max-width: 768px) {
     .logo { 
@@ -61,6 +67,7 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
+    margin-right: 24px;
 }
 
 .nav-links li {
@@ -106,8 +113,15 @@ header {
     }
 
     .search-icon img {
-        width: 20px;
-        height: 20px;
+        width: 44px;
+        height: 44px;
+        padding: 6px;
+    }
+}
+@media (min-width: 1024px) {
+    .search-icon img {
+        max-height: 25px;
+
     }
 }
 
