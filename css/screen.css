@@ -118,12 +118,23 @@ header {
         padding: 6px;
     }
 }
-@media (min-width: 1024px) {
-    .search-icon img {
-        max-height: 25px;
+@media (min-width: 1023px) {
 
+    .header {
+        padding: 10px 20px;
+    }
+
+    .search-icon img {
+        width: 44px;
+        height: 44px;
+        padding: 6px;
     }
 }
+/* @media (min-width: 1024px) {
+    .search-icon img {
+        max-height: 25px;
+    }
+} */
 
 body {
     background-color: var(--main-background);
@@ -355,9 +366,10 @@ ul li {
     /* Search and Filter */
     .search-filter {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        gap: 16px;
     }
     
     .search-bar {
@@ -378,14 +390,14 @@ ul li {
     .search-bar .search-icon {
         background-color: white;
         border: none;
-        padding: 10px;
+        padding: 5px;
         cursor: pointer;
     }
     
     .filter-btn {
         background-color: #e0e0e0;
         border: none;
-        padding: 10px 15px;
+        padding: 14px 35px;
         border-radius: 5px;
         cursor: pointer;
     }
@@ -434,7 +446,7 @@ ul li {
     @media screen and (max-width: 768px) {
         .search-filter {
         flex-direction: column;
-        gap: 10px;
+        gap: 16px;
         }
     
         .search-bar {
@@ -454,7 +466,7 @@ ul li {
     
 /*  recipe-details    recipe-details        recipe-details     recipe-details */
 
-.recipe-image {
+.recipe-details-image {
     margin-top: 3vh;
 }
 .recipe-header h1 {
