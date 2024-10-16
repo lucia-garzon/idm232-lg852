@@ -414,6 +414,12 @@ ul li {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
+
+    .recipe-image {
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensure the figure takes up full width */
+    }
     
     .recipe-image img {
         width: 100%;
@@ -465,6 +471,9 @@ ul li {
     }
     
 /*  recipe-details    recipe-details        recipe-details     recipe-details */
+.recipe-details-link {
+    text-decoration: none;
+}
 
 .recipe-details-image {
     margin-top: 3vh;
