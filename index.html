@@ -6,10 +6,10 @@
     <title>Home</title>
     <link rel="icon" type="image/svg" href="images/hand-logo.svg">
     <link rel="stylesheet" href="css/screen.css">
-    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 <body>
-    <header>
+    <!-- <header>
         <a href="index.html"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
         <nav class="nav">
             <ul class="nav-links">
@@ -21,7 +21,26 @@
         </div>
         </nav>
         
+    </header> -->
+    <header>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="index.html"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
+
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes">Recipes</a></li>
+            </ul>
+        
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <div class="search-box">
+                <i class="uil uil-search search-icon"></i>
+                <input type="text" placeholder="Search for recipes" />
+            </div>
+        </nav>
     </header>
+    
 
     <main class="wrapper">
         <section class="hero-section">
@@ -174,5 +193,5 @@
             </div>
         </footer>
     </main>
-</body>
+    <script src="script.js"></script></body>
 </html>
