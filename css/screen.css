@@ -698,7 +698,6 @@ main {
 /* Header Styles */
 .about-header {
     text-align: center;
-    background-color: #FFB703;
     color: #fff;
     padding: 60px 20px;
 }
@@ -723,7 +722,7 @@ main {
 
 .about-image img {
     width: 100%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 .about-text {
