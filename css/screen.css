@@ -108,31 +108,7 @@ h4 {
         margin-top: 8px;
     }
 }
-/* .nav {
-    display: flex;
-    align-items: center;
-}
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin-right: 24px;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #007bff;
-} */
 
 .search-icon img {
     max-height: 36px;
@@ -983,7 +959,9 @@ main {
         color: var(--primary-text);
     }
 }
-
+.nav-links a:hover {
+    color: var(--link-before);
+}
 
 
 
