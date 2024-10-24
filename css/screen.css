@@ -13,7 +13,7 @@
 }
 
 html {
-    --primary-text: #1C2833;
+    --primary-text: #19242E;
     --secondary-text: #E76100;
     --white-text: #ffffff;
 
@@ -23,6 +23,7 @@ html {
     --button-color: #E76100;
     --secondary-main: #353842; /* Teal/Aqua */
     /* --hover-icon: #FFD80B; */
+    --border-radius: 8px;
 
     --font-header: asap, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     --font-primary: open sans, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -393,6 +394,7 @@ main {
     gap: 10vw;
     width: auto;
     margin-top: 6vh;
+    background-color: #FFDEC5;
 }
 .footer-text {
     max-width: 50ch;
@@ -800,6 +802,11 @@ main {
 .footer-img {
     width: 64px;
     margin-right: 18px;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+.footer-header {
+    color: var(--primary-text);
 }
 
 
