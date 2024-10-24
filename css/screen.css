@@ -42,6 +42,9 @@ header {
     border-bottom: 1px solid #e0e0e0;
 }
 
+img {
+    border-radius: var(--border-radius);
+}
 h1, h2, h3, h4 {
     color: var(--primary-text);
     font-family: var(--font-header);
@@ -586,6 +589,7 @@ main {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 5px;
+    margin-top: 14vh;
 }
 
 .recipe-header .subtitle {
@@ -601,29 +605,42 @@ main {
     cursor: pointer;
 }
 
-  /* Main Recipe Info */
+/* Recipe Image Section */
 .recipe-main-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    display: flex; /* Use flexbox to arrange image and meta items */
+    flex-direction: column; /* Stack elements in a column */
+    align-items: center; /* Center align for better aesthetics */
+    margin: 2rem 0; /* Space above and below the section */
 }
 
-.main-image img {
-    max-width: 100%;
-    border-radius: 8px;
+.main-image {
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Maximum width for larger screens */
+    margin-bottom: 1rem; /* Space below the image */
 }
 
+.recipe-details-image {
+    width: 100%; /* Full width of the image container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+}
+
+/* Meta section styles */
 .recipe-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: flex; /* Align meta items in a row */
+    flex-direction: column; /* Stack meta items vertically */
+    align-items: flex-start; /* Left align meta items */
+    width: 100%; /* Full width */
 }
 
 .meta-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: flex; /* Flex layout for icon and text */
+    align-items: center; /* Center the icon and text vertically */
+    margin-top: 0.5rem; /* Space above each meta item */
+    font-size: 1rem; /* Font size for meta text */
 }
+
 
   /* Description Section */
 .description-section {
@@ -644,8 +661,7 @@ main {
     margin-top: 10px;
 }
 
-  /* Ingredients Section */
-.ingredients-section {
+/* .ingredients-section {
     margin-bottom: 30px;
 }
 
@@ -654,7 +670,6 @@ main {
     gap: 20px;
 }
 
-  /* Steps Section */
 .steps-section .step {
     display: flex;
     gap: 20px;
@@ -673,7 +688,6 @@ main {
     border-radius: 50%;
 }
 
-  /* Responsive Design */
 @media screen and (max-width: 768px) {
     .recipe-main-info {
         flex-direction: column;
@@ -687,7 +701,196 @@ main {
     .steps-section .step {
         flex-direction: column;
     }
+} */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
+
+/* Recipe Container */
+.recipe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Recipe Header */
+.recipe-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Recipe Main Info */
+.recipe-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.recipe-details-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Meta Info */
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Description Section */
+.description-section {
+    margin-bottom: 2rem;
+}
+/* Ingredients Section */
+.ingredients-section {
+    margin-bottom: 2rem; /* Space below the section */
+    padding: 1rem; /* Add padding for better spacing */
+    background-color: var(--main-background); /* Set background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.ingredients-section h2 {
+    margin-bottom: 1rem; /* Space below the heading */
+    font-size: 1.8rem; /* Font size for the heading */
+    color: #333; /* Heading color */
+    text-align: left; /* Left align the heading */
+}
+
+.ingredients-grid {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between image and list */
+}
+
+.ingredients-image {
+    width: 300px; /* Fixed width of the image on desktop */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for image */
+}
+
+.ingredients-list {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 117px; /* Space for bullet points */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flex for the list */
+    flex-direction: column; /* Stack items vertically */
+    gap: 0.5rem; /* Space between list items */
+    max-width: 400px; /* Limit the width of the list for better alignment */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .ingredients-grid {
+        flex-direction: column; /* Stack image and list vertically on mobile */
+        align-items: center; /* Center align items */
+    }
+
+    .ingredients-image {
+        width: 100%; /* Full width for mobile */
+        max-width: 300px; /* Max width for larger mobile screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .ingredients-image {
+        width: 400px; /* Larger width of the image on desktop */
+    }
+
+    .ingredients-grid {
+        align-items: flex-start; /* Align items to the top on desktop */
+    }
+}
+
+
+
+
+
+
+/* Steps Section */
+.steps-section {
+    margin-bottom: 2rem;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column; /* Default to column for mobile */
+    gap: 20px; /* Space between each step */
+}
+
+.step {
+    display: flex; /* Align items horizontally on larger screens */
+    flex-direction: row; /* Row for desktop layout */
+    align-items: flex-start; /* Align items to the top */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease; /* Optional: Add hover effect */
+}
+
+.step:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Hover effect */
+}
+
+.step-image {
+    width: 100%; /* Set a specific width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between image and text */
+    height: auto;
+    max-width: 500px;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column; /* Stack number and text vertically */
+}
+
+.step-number {
+    font-weight: bold; /* Make the step number bold */
+    font-size: 1.5rem; /* Increase font size for visibility */
+    color: #FF6F61; /* Add a color for the step number */
+    border: 2px solid #FF6F61; /* Add a border around the number */
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Fixed width for circular shape */
+    height: 40px; /* Fixed height for circular shape */
+    display: flex; /* Flex to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    margin-bottom: 0.5rem; /* Space between number and text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .step {
+        flex-direction: column; /* Change to column layout on mobile */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .step-image {
+        width: 100%; /* Make image full width on mobile */
+        max-width: 350px; /* Maximum width for larger mobile screens */
+        
+        margin: 0 auto 1rem auto
+    }
+}
+
+
 
 
 
