@@ -1129,7 +1129,7 @@ body {
       max-width: 400px;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 920px) {
     .nav .navOpenBtn,
     .nav .navCloseBtn {
       display: block;
@@ -1245,6 +1245,15 @@ body {
 .btn-secondary {
     background-color: var(--secondary-main); /* Teal */
     color: var(--white-text);
+    margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+  letter-spacing: .03ch;
+  font-family: var(--font-primary);
+  font-weight: 600;
 }
 
 .no-results-actions {
@@ -1371,6 +1380,15 @@ body {
 .btn-primary {
     background-color: var(--secondary-text);
     color: var(--white-text);
+    margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+  letter-spacing: .03ch;
+  font-family: var(--font-primary);
+  font-weight: 600;
 }
 
 .btn-primary:hover {
@@ -1383,7 +1401,7 @@ body {
 }
 
 .btn-secondary:hover {
-    background-color: #004f4f;
+    background-color: black;
 }
 
 footer {
