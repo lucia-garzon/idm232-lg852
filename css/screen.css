@@ -963,5 +963,84 @@ main {
     color: var(--link-before);
 }
 
+.no-results-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background);
+    text-align: center;
+    padding: 2rem;
+}
+
+.no-results-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.no-results-icon {
+    font-size: 4rem;
+    color: var(--secondary-text); /* Vibrant orange */
+    margin-bottom: 1rem;
+}
+
+.no-results-content h1 {
+    font-size: 2rem;
+    color: var(--primary-text);
+    margin-bottom: 0.5rem;
+}
+
+.no-results-content p {
+    color: var(--primary-text);
+    margin-bottom: 1.5rem;
+}
+
+.no-results-actions .btn-primary,
+.no-results-actions .btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--secondary-text); /* Vibrant orange */
+    color: var(--white-text);
+    font-family: var(--font-primary);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-main); /* Teal */
+    color: var(--white-text);
+}
+
+.no-results-actions {
+    display: flex;
+    gap: 1rem;  /* Adds space between the buttons */
+    justify-content: center;  /* Center buttons horizontally */
+    align-items: center;  /* Ensure both buttons align perfectly */
+    margin-top: 1.5rem;
+}
+
+.no-results-actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;  /* Optional: Makes buttons equal width */
+    max-width: 200px;  /* Restricts maximum size */
+}
 
 
