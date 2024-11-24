@@ -11,13 +11,13 @@
     <header>
         <nav class="nav">
             <i class="uil uil-bars navOpenBtn"></i>
-            <a href="index.html"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
+            <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
                 <i class="uil uil-times navCloseBtn"></i>
-                <li><a class="nav-item" href="index.html">Home</a></li>
-                <li><a class="nav-item" href="recipes.html">Recipes</a></li>
-                <li><a class="nav-item" href="help.html">Help</a></li>
+                <li><a class="nav-item" href="index.php">Home</a></li>
+                <li><a class="nav-item" href="recipes.php">Recipes</a></li>
+                <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
             <i class="uil uil-search search-icon" id="searchIcon"></i>
@@ -56,13 +56,13 @@
             <article class="help-topic">
                 <i class="uil uil-phone icon"></i>
                 <h3>Contact Us</h3>
-                <p>If you have further questions, <a href="contact.html">contact us</a> or email us at <a href="mailto:support@thesecretingredient.com">support@thesecretingredient.com</a>.</p>
+                <p>If you have further questions, email us at <a href="mailto:support@thesecretingredient.com">support@thesecretingredient.com</a>.</p>
             </article>
         </section>
 
         <section class="help-actions">
-            <a href="index.html" class="btn-primary">Back to Home</a>
-            <a href="recipes.html" class="btn-secondary">Explore Recipes</a>
+            <a href="index.php" class="btn-primary">Back to Home</a>
+            <a href="recipes.php" class="btn-secondary">Explore Recipes</a>
         </section>
     </main>
 
