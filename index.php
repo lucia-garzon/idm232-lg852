@@ -42,8 +42,9 @@
         </nav>
     </header>
     
-
+    
     <main class="wrapper">
+        
         <section class="hero-section">
             <h2 class="hero-title">Meals for Every Kitchen</h2>
             <div class="hero-grid">
