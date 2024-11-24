@@ -12,13 +12,13 @@
     <header>
         <nav class="nav">
             <i class="uil uil-bars navOpenBtn"></i>
-            <a href="index.html"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
+            <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
                 <i class="uil uil-times navCloseBtn"></i>
-                <li><a class="nav-item" href="index.html">Home</a></li>
-                <li><a class="nav-item" href="recipes.html">Recipes</a></li>
-                <li><a class="nav-item" href="help.html">Help</a></li>
+                <li><a class="nav-item" href="index.php">Home</a></li>
+                <li><a class="nav-item" href="recipes.php">Recipes</a></li>
+                <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
             <i class="uil uil-search search-icon" id="searchIcon"></i>
