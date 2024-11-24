@@ -49,7 +49,7 @@
         <section class="recipe-grid">
         <!-- Repeat this block for each recipe card -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -65,7 +65,7 @@
             </article>
 
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -81,7 +81,7 @@
             </article>
 
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -96,7 +96,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -111,7 +111,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -126,7 +126,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -141,7 +141,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -156,7 +156,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -171,7 +171,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -186,7 +186,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -201,7 +201,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -216,7 +216,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -231,7 +231,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -246,7 +246,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -261,7 +261,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -276,7 +276,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -291,7 +291,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -306,7 +306,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -321,7 +321,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -336,7 +336,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -353,7 +353,7 @@
             <!-- 20 -->
 
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -369,7 +369,7 @@
             </article>
 
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -385,7 +385,7 @@
             </article>
 
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -400,7 +400,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -415,7 +415,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -430,7 +430,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -445,7 +445,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -460,7 +460,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -475,7 +475,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -490,7 +490,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -505,7 +505,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -520,7 +520,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -535,7 +535,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -550,7 +550,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -565,7 +565,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -580,7 +580,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -595,7 +595,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -610,7 +610,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -625,7 +625,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
@@ -640,7 +640,7 @@
                 </a>
             </article>
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.html">
+                <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
                     </figure>
