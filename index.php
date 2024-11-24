@@ -25,13 +25,13 @@
     <header>
         <nav class="nav">
             <i class="uil uil-bars navOpenBtn"></i>
-            <a href="index.html"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
+            <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
                 <i class="uil uil-times navCloseBtn"></i>
-                <li><a class="nav-item" href="index.html">Home</a></li>
-                <li><a class="nav-item" href="recipes.html">Recipes</a></li>
-                <li><a class="nav-item" href="help.html">Help</a></li>
+                <li><a class="nav-item" href="index.php">Home</a></li>
+                <li><a class="nav-item" href="recipes.php">Recipes</a></li>
+                <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
             <i class="uil uil-search search-icon" id="searchIcon"></i>
@@ -44,6 +44,9 @@
     
     
     <main class="wrapper">
+        <?php
+            echo("Hello World");
+        ?>
         
         <section class="hero-section">
             <h2 class="hero-title">Meals for Every Kitchen</h2>
@@ -72,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <a class="hero-btn" href="recipes.html">More Recent Recipes</a>
+            <a class="hero-btn" href="recipes.php">More Recent Recipes</a>
         </section>
         <!-- <section class="hero">
             <div class="hero-content">
@@ -104,7 +107,7 @@
                 </div>
                 
                 <div class="filter-circle">
-                    <a href="recipes.html" class="all-recipes">
+                    <a href="recipes.php" class="all-recipes">
                         <img src="images/placeholder-circle.svg" alt="Arrow">
                     </a>
                     <p>All Recipes</p>
@@ -140,7 +143,7 @@
                 
             </div>
             </div>
-            <a class="see-all" href="recipes.html">See All Recipes</a>
+            <a class="see-all" href="recipes.php">See All Recipes</a>
         </section>
         <footer>
             <div class="footer-content">
