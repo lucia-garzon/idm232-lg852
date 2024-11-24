@@ -16,8 +16,8 @@
 
             <ul class="nav-links">
                 <i class="uil uil-times navCloseBtn"></i>
-                <li><a class="nav-item" href="index.html">Home</a></li>
-                <li><a class="nav-item" href="recipes.html">Recipes</a></li>
+                <li><a class="nav-item" href="index.php">Home</a></li>
+                <li><a class="nav-item" href="recipes.php">Recipes</a></li>
                 <li><a class="nav-item" href="help.html">Help</a></li>
             </ul>
         
