@@ -849,11 +849,8 @@ body {
 }
 
 .step-image {
-    width: 100%; /* Set a specific width for the image */
-    height: auto; /* Maintain aspect ratio */
     margin-right: 1rem; /* Space between image and text */
-    height: auto;
-    max-width: 500px;
+    width: 500px;
 }
 
 .step-content {
