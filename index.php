@@ -51,34 +51,7 @@ $result = $connection->query($sql);
         </nav>
     </header>
     
-    <h1>Database First Row</h1>
-    <table border="1">
-        <tr>
-            <?php
-            // Display table headers dynamically if data exists
-            if ($result->num_rows > 0) {
-                $row = $result->fetch_assoc();
-                foreach ($row as $key => $value) {
-                    echo "<th>" . htmlspecialchars($key) . "</th>";
-                }
-            } else {
-                echo "<th>No data found</th>";
-            }
-            ?>
-        </tr>
-        <tr>
-            <?php
-            // Display table values dynamically if data exists
-            if ($result->num_rows > 0) {
-                foreach ($row as $key => $value) {
-                    echo "<td>" . htmlspecialchars($value) . "</td>";
-                }
-            } else {
-                echo "<td>No data available</td>";
-            }
-            ?>
-        </tr>
-    </table>
+    
     <main class="wrapper">
         
         <section class="hero-section">
