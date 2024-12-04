@@ -1,3 +1,31 @@
+<?php
+    include './includes/db_connect.php'; // Database connection
+
+    // Check if ID is provided in the URL
+    if (isset($_GET['id'])) {
+        $recipeId = $_GET['id']; // Get the recipe ID from the URL
+
+        // Prevent SQL injection by sanitizing the input
+        $recipeId = $connection->real_escape_string($recipeId);
+
+        // Query the database to fetch recipe details by ID
+        $sql = "SELECT * FROM recipes_data WHERE id = $recipeId";
+        $result = $connection->query($sql);
+
+        if ($result->num_rows > 0) {
+            // Fetch the recipe data
+            $recipe = $result->fetch_assoc();
+        } else {
+            echo "<p>Recipe not found.</p>";
+            exit;
+        }
+    } else {
+        echo "<p>No recipe selected.</p>";
+        exit;
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,15 +60,15 @@
 <main class="recipe-container">
     <!-- Recipe Title Section -->
     <section class="recipe-header">
-        <h1>Recipe Title</h1>
-        <p class="subtitle">Subtitle</p>
+        <h1><?php echo htmlspecialchars($recipe['title']); ?></h1>
+        <p class="subtitle"><?php echo htmlspecialchars($recipe['subtitle']); ?></p>
         <button class="jump-button">Jump to recipe</button>
     </section>
 
     <!-- Recipe Image Section -->
     <section class="recipe-main-info">
         <div class="main-image">
-            <img class="recipe-details-image" src="images/placeholder.svg" alt="Recipe Image">
+            <img class="recipe-details-image" src="<?php echo $recipe['main_image']; ?>" alt="Recipe Image">
         </div>
         <div class="recipe-meta">
             <div class="meta-item">
@@ -49,14 +77,11 @@
                     <line x1="12" y1="7" x2="12" y2="12" stroke="black" stroke-width="2"/>
                     <line x1="12" y1="12" x2="15" y2="15" stroke="black" stroke-width="2"/>
                 </svg>
-                X MIN
+                <?php echo htmlspecialchars($recipe['cook_time']); ?> 
             </div>
             <div class="meta-item">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                    <line x1="2" y1="2" x2="22" y2="22" stroke="black" stroke-width="2"/>
-                    <line x1="2" y1="22" x2="22" y2="2" stroke="black" stroke-width="2"/>
-                </svg>
-                X Servings
+                
+                <?php echo htmlspecialchars($recipe['servings']); ?> 
             </div>
         </div>
     </section>
@@ -65,11 +90,7 @@
     <section class="description-section">
         <div class="description">
             <p class="description-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis 
-                mauris nec dolor volutpat, nec lobortis nulla pretium. Integer posuere felis 
-                id mi vehicula varius. Etiam sagittis ante in mauris euismod, sed facilisis 
-                odio pharetra. Morbi vehicula ex a malesuada suscipit. Ut volutpat odio 
-                id leo tempus, sed condimentum enim lobortis. Curabitur ac sem urna.
+                <?php echo nl2br(htmlspecialchars($recipe['description'])); ?>
             </p>
         </div>
         <button class="show-more-btn">Show more</button>
@@ -79,14 +100,23 @@
     <section class="ingredients-section">
         <h2>Ingredients</h2>
         <div class="ingredients-grid">
-            <img src="images/placeholder.svg" alt="Ingredients Image" class="ingredients-image">
+            <?php
+            // Check if the ingredients image exists and display it
+            if (!empty($recipe['ingredients_image'])) {
+                echo '<img src="' . htmlspecialchars($recipe['ingredients_image']) . '" alt="Ingredients Image" class="ingredients-image">';
+            } else {
+                // If no ingredients image is found, use a placeholder image
+                echo '<img src="images/placeholder.svg" alt="Ingredients Image" class="ingredients-image">';
+            }
+            ?>
             <ul class="ingredients-list">
-                <li>1 cup of flour</li>
-                <li>2 eggs</li>
-                <li>1/2 cup of sugar</li>
-                <li>1/4 cup of butter</li>
-                <li>1 tsp of baking powder</li>
-                <li>Pinch of salt</li>
+                <?php
+                // Display ingredients from database 
+                $ingredients = explode(",", $recipe['ingredients']); // Assuming ingredients are stored as comma-separated values
+                foreach ($ingredients as $ingredient) {
+                    echo "<li>" . htmlspecialchars(trim($ingredient)) . "</li>";
+                }
+                ?>
             </ul>
         </div>
     </section>
@@ -96,7 +126,26 @@
 <section class="steps-section">
     <h2>Steps</h2>
     <div class="steps-container">
-        <div class="step">
+    <?php
+        // Assuming step images are stored in a comma-separated string in the 'steps_images' column
+        $stepImages = explode("|", $recipe['step_images']); // Split the step images by "|"
+
+        // Display steps and their corresponding images
+        $steps = explode("*", $recipe['steps']); // Assuming steps are stored as comma-separated values
+        foreach ($steps as $index => $step) {
+            // Get the image for this step (if exists)
+            $stepImage = isset($stepImages[$index]) ? $stepImages[$index] : 'images/placeholder.svg'; // Default image if none provided
+
+            echo "<div class='step'>
+                    <img src='" . htmlspecialchars($stepImage) . "' alt='Step " . ($index + 1) . " Image' class='step-image'>
+                    <div class='step-content'>
+                        <div class='step-number'>" . ($index + 1) . "</div>
+                        <p>" . htmlspecialchars(trim($step)) . "</p>
+                    </div>
+                </div>";
+        }
+    ?>
+        <!-- <div class="step">
             <img src="images/placeholder.svg" alt="Step Image" class="step-image">
             <div class="step-content">
                 <div class="step-number">1</div>
@@ -137,7 +186,7 @@
                 <div class="step-number">6</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -197,3 +246,4 @@
 <script src="js/script.js"></script>
 </body>
 </html>
+
