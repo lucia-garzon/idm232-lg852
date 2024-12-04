@@ -21,11 +21,15 @@
                 <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
-            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <!-- <i class="uil uil-search search-icon" id="searchIcon"></i>
             <div class="search-box">
                 <i class="uil uil-search search-icon"></i>
                 <input type="text" placeholder="Search for recipes" />
-            </div>
+            </div> -->
+            <form class="searchform" action="search.php" method="post">
+                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
+                <button>Search</button>
+            </form>
         </nav>
     </header>
     <main class="recipe-container">
@@ -36,10 +40,14 @@
         <section class="search-filter">
         </section>
         <section class="search-filter">
-            <div class="search-bar">
+            <!-- <div class="search-bar">
                 <input type="text" placeholder="Search for recipes" />
                 <button class="search-icon"><img src="images/search-icon.svg" alt="Search Icon"></button>
-            </div>
+            </div> -->
+            <form class="searchform search-bar" action="search.php" method="post">
+                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
+                <button>Search</button>
+            </form>
             <button class="filter-btn">Filter ▼</button>
             <a href="help.php" class="help-link">
                 <i class="help-icon uil uil-question-circle" aria-label="Help"></i>
