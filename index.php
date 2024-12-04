@@ -1,3 +1,12 @@
+<?php
+// Include the database connection
+include './includes/db_connect.php';
+
+// Query to fetch the first row
+$sql = "SELECT * FROM recipes_data LIMIT 1";
+$result = $connection->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,11 +51,35 @@
         </nav>
     </header>
     
-    
+    <h1>Database First Row</h1>
+    <table border="1">
+        <tr>
+            <?php
+            // Display table headers dynamically if data exists
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
+                foreach ($row as $key => $value) {
+                    echo "<th>" . htmlspecialchars($key) . "</th>";
+                }
+            } else {
+                echo "<th>No data found</th>";
+            }
+            ?>
+        </tr>
+        <tr>
+            <?php
+            // Display table values dynamically if data exists
+            if ($result->num_rows > 0) {
+                foreach ($row as $key => $value) {
+                    echo "<td>" . htmlspecialchars($value) . "</td>";
+                }
+            } else {
+                echo "<td>No data available</td>";
+            }
+            ?>
+        </tr>
+    </table>
     <main class="wrapper">
-        <?php
-            echo("Hello World");
-        ?>
         
         <section class="hero-section">
             <h2 class="hero-title">Meals for Every Kitchen</h2>
@@ -144,6 +177,8 @@
             </div>
             </div>
             <a class="see-all" href="recipes.php">See All Recipes</a>
+
+            
         </section>
         <footer>
             <div class="footer-content">
