@@ -1408,3 +1408,41 @@ footer {
     color: var(--primary-text);
 }
 
+
+/* Search Form Styling */
+.searchform {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 0.4rem 0.8rem;
+}
+
+.searchform input {
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+    width: 200px;
+    background: transparent;
+}
+
+.searchform button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.searchform button:hover {
+    color: #000;
+}
+
+.searchform i {
+    font-size: 1.2rem;
+}
