@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <i class="uil uil-bars navOpenBtn"></i>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
             <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
@@ -20,11 +20,23 @@
                 <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
-            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <!-- <i class="uil uil-search search-icon" id="searchIcon"></i>
             <div class="search-box">
                 <i class="uil uil-search search-icon"></i>
                 <input type="text" placeholder="Search for recipes" />
-            </div>
+            </div> -->
+            <!-- <form class="searchform searchform-nav" action="search.php" method="post">
+                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
+                <button>Search</button>
+            </form> -->
+            <!-- <div class="search-container">
+                <i class="uil uil-search search-icon" id="searchIcon"></i>
+                <form class="searchform searchform-nav" id="searchForm" action="search.php" method="post">
+                    <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
+                    <button>Search</button>
+                </form>
+            </div> -->
+
         </nav>
     </header>
 

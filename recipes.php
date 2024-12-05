@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="nav">
-            <i class="uil uil-bars navOpenBtn"></i>
+        <i class="uil uil-bars navOpenBtn"></i>
             <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
@@ -26,16 +26,24 @@
                 <i class="uil uil-search search-icon"></i>
                 <input type="text" placeholder="Search for recipes" />
             </div> -->
-            <form class="searchform" action="search.php" method="post">
+            <!-- <form class="searchform searchform-nav" action="search.php" method="post">
                 <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
                 <button>Search</button>
-            </form>
+            </form> -->
+            <!-- <div class="search-container">
+                <i class="uil uil-search search-icon" id="searchIcon"></i>
+                <form class="searchform searchform-nav" id="searchForm" action="search.php" method="post">
+                    <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
+                    <button>Search</button>
+                </form>
+            </div> -->
+
         </nav>
     </header>
     <main class="recipe-container">
         <section class="heading">
             <h1>Recipes</h1>
-            <p>Subtitle</p>
+            <p>Savor Every Bite, One Meal at a Time</p>
         </section>
         <section class="search-filter">
         </section>
@@ -56,7 +64,7 @@
     
         <section class="recipe-grid">
         <!-- Repeat this block for each recipe card -->
-            <article class="recipe-card">
+            <!-- <article class="recipe-card">
                 <a class="recipe-details-link" href="recipe-details.php">
                     <figure class="recipe-image">
                         <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
@@ -65,604 +73,149 @@
                         <h3 class="recipe-card-title">Title</h3>
                         <p class="recipe-card-subtitle">Subtitle</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
+                            <i class="uil uil-clock"></i> 
                             <p>X MIN</p>
+                        </div>
+                    </div>
+                </a>
+            </article> -->
+
+        <!-- Recipe 1 -->
+        <article class="recipe-card">
+                <a class="recipe-details-link" href="recipe-details.php?id=1"> <!-- Link to recipe 1 -->
+                    <figure class="recipe-image">
+                        <img src="images/1-anchoorangechicken/1-anchoorangechicken-hero.webp" alt="Recipe 1 Image" loading="lazy">
+                    </figure>
+                    <div class="recipe-info">
+                        <h3 class="recipe-card-title">Ando-Orange Chicken</h3>
+                        <p class="recipe-card-subtitle">with Kale Rice & Roasted Carrots</p>
+                        <div class="recipe-time">
+                            <i class="uil uil-clock"></i> 
+                            <p>30 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
 
+            <!-- Recipe 2 -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
+                <a class="recipe-details-link" href="recipe-details.php?id=2"> <!-- Link to recipe 2 -->
                     <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
+                        <img src="images/2-beefmedallions/2-beefmedallions-hero.webp" alt="Recipe 2 Image" loading="lazy">
                     </figure>
                     <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
+                        <h3 class="recipe-card-title">Beef Medallions & Mushroom Sauce</h3>
+                        <p class="recipe-card-subtitle">with Mashed Potatoes</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
+                            <i class="uil uil-clock"></i> 
+                            <p>45 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
 
+            <!-- Recipe 3 -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
+                <a class="recipe-details-link" href="recipe-details.php?id=3"> <!-- Link to recipe 3 -->
                     <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
+                        <img src="images/3-broccolibasilpesto/3-broccolibasilpesto-hero.webp" alt="Recipe 3 Image" loading="lazy">
                     </figure>
                     <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
+                        <h3 class="recipe-card-title">Broccoli & Basil Pesto Sandwiches</h3>
+                        <p class="recipe-card-subtitle">with Romaine & Citrus Salad</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <!-- 20 -->
-
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
+                            <i class="uil uil-clock"></i> 
+                            <p>20 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
 
+            <!-- Recipe 4 -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
+                <a class="recipe-details-link" href="recipe-details.php?id=4"> <!-- Link to recipe 4 -->
                     <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
+                        <img src="images/4-broccolicalzones/4-broccolicalzones-hero.webp" alt="Recipe 4 Image" loading="lazy">
                     </figure>
                     <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
+                        <h3 class="recipe-card-title">Broccoli & Mozzarella Calzones</h3>
+                        <p class="recipe-card-subtitle">with Caesar Salad</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
+                            <i class="uil uil-clock"></i> 
+                            <p>60 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
 
+            <!-- Recipe 5 -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
+                <a class="recipe-details-link" href="recipe-details.php?id=5"> <!-- Link to recipe 5 -->
                     <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
+                        <img src="images/5-bucatinialfredo/5-bucatinialfredo-hero.webp" alt="Recipe 5 Image" loading="lazy">
                     </figure>
                     <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
+                        <h3 class="recipe-card-title">Bucatini Alfredo</h3>
+                        <p class="recipe-card-subtitle">with Broccoli</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
+                            <i class="uil uil-clock"></i> 
+                            <p>25 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
+
+            <!-- Recipe 6 -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
+                <a class="recipe-details-link" href="recipe-details.php?id=6"> <!-- Link to recipe 6 -->
                     <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
+                        <img src="images/6-bucatinitomato/6-bucatinitomato-hero.webp" alt="Recipe 6 Image" loading="lazy">
                     </figure>
                     <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
+                        <h3 class="recipe-card-title">Bucatini & Tomato Sauce</h3>
+                        <p class="recipe-card-subtitle">with Roasted Broccoli</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
+                            <i class="uil uil-clock"></i> 
+                            <p>35 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
+
+            <!-- Recipe 7 -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
+                <a class="recipe-details-link" href="recipe-details.php?id=7"> <!-- Link to recipe 7 -->
                     <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
+                        <img src="images/7-cheesyenchiladas/7-cheesyenchiladas-hero.webp" alt="Recipe 7 Image" loading="lazy">
                     </figure>
                     <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
+                        <h3 class="recipe-card-title">Cheesy Enchiladas Rojas</h3>
+                        <p class="recipe-card-subtitle">with Mushrooms & Kale</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
+                            <i class="uil uil-clock"></i> 
+                            <p>50 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
+
+            <!-- Recipe 8 -->
             <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
+                <a class="recipe-details-link" href="recipe-details.php?id=8"> <!-- Link to recipe 8 -->
                     <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
+                        <img src="images/8-crispyfishsandwiches/8-crispyfishsandwiches-hero.webp" alt="Recipe 8 Image" loading="lazy">
                     </figure>
                     <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
+                        <h3 class="recipe-card-title">Crispy Fish Sandwiches</h3>
+                        <p class="recipe-card-subtitle">with Tartar Sauce & Roasted Sweet Potato Wedges</p>
                         <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
+                            <i class="uil uil-clock"></i> 
+                            <p>15 MIN</p>
                         </div>
                     </div>
                 </a>
             </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> <!-- Clock icon -->
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-        <!-- End of recipe card -->
+        
         </section>
 
     </main>
