@@ -68,7 +68,8 @@
             <article class="help-topic">
                 <i class="uil uil-phone icon"></i>
                 <h3>Contact Us</h3>
-                <p>If you have further questions, email us at <a href="mailto:support@thesecretingredient.com">support@thesecretingredient.com</a>.</p>
+                <p>Email us for questions.</p>
+                <!-- <a href="mailto:support@thesecretingredient.com">support@thesecretingredient.com</a>. -->
             </article>
         </section>
 
