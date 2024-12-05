@@ -1,4 +1,0 @@
-SetEnv DB_SERVER localhost
-SetEnv DB_USER lg852
-SetEnv DB_PASS VFbVyVk47YosFb0Q
-SetEnv DB_NAME l852_db
