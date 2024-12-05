@@ -74,7 +74,7 @@
     <section class="recipe-header">
         <h1><?php echo htmlspecialchars($recipe['title']); ?></h1>
         <p class="subtitle"><?php echo htmlspecialchars($recipe['subtitle']); ?></p>
-        <button class="jump-button">Jump to recipe</button>
+        <!-- <button class="jump-button">Jump to recipe</button> -->
     </section>
 
     <!-- Recipe Image Section -->
@@ -124,9 +124,16 @@
             <ul class="ingredients-list">
                 <?php
                 // Display ingredients from database 
-                $ingredients = explode(",", $recipe['ingredients']); // Assuming ingredients are stored as comma-separated values
+                $ingredients = explode("\n", $recipe['ingredients']); // Split by new line
+
                 foreach ($ingredients as $ingredient) {
-                    echo "<li>" . htmlspecialchars(trim($ingredient)) . "</li>";
+                    // Clean up the ingredient string by trimming extra spaces
+                    $ingredient = htmlspecialchars(trim($ingredient)); 
+                    
+                    // Avoid empty items being displayed
+                    if (!empty($ingredient)) {
+                        echo "<li>" . $ingredient . "</li>";
+                    }
                 }
                 ?>
             </ul>

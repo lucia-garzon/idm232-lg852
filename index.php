@@ -32,8 +32,8 @@ $result = $connection->query($sql);
         
     </header> -->
     <header>
-        <nav class="nav">
-            <i class="uil uil-bars navOpenBtn"></i>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
             <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
@@ -43,11 +43,23 @@ $result = $connection->query($sql);
                 <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
-            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <!-- <i class="uil uil-search search-icon" id="searchIcon"></i>
             <div class="search-box">
                 <i class="uil uil-search search-icon"></i>
                 <input type="text" placeholder="Search for recipes" />
-            </div>
+            </div> -->
+            <!-- <form class="searchform searchform-nav" action="search.php" method="post">
+                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
+                <button>Search</button>
+            </form> -->
+            <!-- <div class="search-container">
+                <i class="uil uil-search search-icon" id="searchIcon"></i>
+                <form class="searchform searchform-nav" id="searchForm" action="search.php" method="post">
+                    <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
+                    <button>Search</button>
+                </form>
+            </div> -->
+
         </nav>
     </header>
     
@@ -58,28 +70,38 @@ $result = $connection->query($sql);
             <h2 class="hero-title">Meals for Every Kitchen</h2>
             <div class="hero-grid">
                 <div class="hero-item">
-                    <img src="images/placeholder.svg" alt="Recipe Image" class="index-image">
+                    <a class="recipe-details-link" href="recipe-details.php?id=28">
+                    <img class="index-image" src="images/28-shiitakeburgers/28-shiitakeburgers-hero.webp" alt="Recipe Image" loading="lazy">
                     <div class="hero-info">
-                        <h3>Seared Steaks &amp; Garlic Butter</h3>
-                        <p>with Oven Fries</p>
+                        <h3>Shiitake & Hoisin Beef Burgers</h3>
+                        <p>with Miso Mayonnaise &amp; Roasted Sweet Potatoes</p>
                     </div>
+                    </a>
                 </div>
-        
+
+            
                 <div class="hero-item">
-                    <img src="images/placeholder.svg" alt="Recipe Image" class="index-image">
+                    <a class="recipe-details-link" href="recipe-details.php?id=29">
+                    <img class="index-image" src="images/29-shrimp/29-shrimp-hero.webp" alt="Recipe Image" loading="lazy">
                     <div class="hero-info">
                         <h3>Shrimp Fra Diavolo</h3>
                         <p>with Lumaca Rigata Pasta</p>
                     </div>
+                    </a>
                 </div>
-        
+
                 <div class="hero-item wide">
-                    <img src="images/placeholder.svg" alt="Recipe Image" class="index-image">
+                    <a class="recipe-details-link" href="recipe-details.php?id=14">
+                    <img class="index-image" src="images/14-parmesanchicken/14-parmesanchicken-extra.webp" alt="Recipe Image" loading="lazy">
                     <div class="hero-info">
-                        <h3>Spicy Chicken Quesadillas</h3>
-                        <p>with Beet Orange Salad</p>
+                        <h3>Parmesan-Crusted Chicken</h3>
+                        <p>with Mashed Sweet Potatoes & Roasted Broccoli</p>
                     </div>
+                    </a>
                 </div>
+
+
+                
             </div>
             <a class="hero-btn" href="recipes.php">More Recent Recipes</a>
         </section>
@@ -89,7 +111,7 @@ $result = $connection->query($sql);
                 <h1 class="overlay-text">Hearty meals for every kitchen</h1>
             </div>
         </section> -->
-        <section class="quick-filters">
+        <!-- <section class="quick-filters">
             <div class="filters-grid">
                 <div class="filter-circle">
                     <img src="images/placeholder-circle.svg"  alt="Chicken">
@@ -119,37 +141,43 @@ $result = $connection->query($sql);
                     <p>All Recipes</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="offerings">
             <h2>Explore our offerings</h2>
             <div class="index-cards">
                 <div class="index-card">
-                <img class="index-card-image" src="images/Recipe_MexicanSpiced_Barramundi_with_Kale_Sweet_Potato_Avocado_Salad/0108_2PF_Barramundi_98380_SQ_hi_res.jpg" alt="Recipe Card 1">
-                <div class="index-card-content">
-                    <h3>Mexican Spiced Barramundi</h3>
-                    <p>with Kale Sweet Potato Avocado Salad</p>
+                    <a class="recipe-details-link" href="recipe-details.php?id=7">
+                    <img class="index-card-image" src="images/7-cheesyenchiladas/7-cheesyenchiladas-hero.webp" alt="Recipe Card 1">
+                    <div class="index-card-content">
+                        <h3>Cheesy Enchiladas Rojas</h3>
+                        <p>with Mushrooms & Kale</p>
+                    </a>
                 </div>
+            </div>
+
+            <div class="index-card">
+                    <a class="recipe-details-link" href="recipe-details.php?id=25">
+                    <img class="index-card-image" src="images/25-salmonhoney/25-salmonhoney-hero.webp" alt="Recipe Card 2">
+                    <div class="index-card-content">
+                        <h3>Salmon Honey Glazed Carrots</h3>
+                        <p>with Lemon Saffron Yogurt Sauce</p>
+                    </a>
+                </div>
+            
                 
             </div>
             <div class="index-card">
-                <img class="index-card-image" src="images/Recipe_Salmon_HoneyGlazed_Carrots_with_LemonSaffron_Yogurt_Sauce/1106_2PF_Salmon-Honey-Carrots_94837_SQ_hi_res.jpg" alt="Recipe Card 2">
-                <div class="index-card-content">
-                    <h3>Salmon Honey Glazed Carrots</h3>
-                    <p class="index-subtitle">with Lemon Saffron Yogurt Sauce</p>
+                    <a class="recipe-details-link" href="recipe-details.php?id=8">
+                    <img class="index-card-image" src="images/8-crispyfishsandwiches/8-crispyfishsandwiches-hero.webp" alt="Recipe Card 3">
+                    <div class="index-card-content">
+                        <h3>Crispy Fish Sandwiches</h3>
+                        <p>with Tartar Sauce & Roasted Sweet Potato Wedges</p>
+                    </a>
                 </div>
-                
             </div>
-            <div class="index-card">
-                <img class="index-card-image" src="images/Recipe_Top_Chef_Ginger-Marinated_Grassfed_Steaks_with_Stir-Fried_Vegetables_Jasmine_RiceBlue_A/0108_2PM_Ginger-Steak-Stirfry_98208_201_SQ_hi_res.jpg" alt="Recipe Card 3">
-                <div class="index-card-content">
-                    <h3>Top Chef Ginger-Marinated Grassfed Steaks</h3>
-                    <p>with Stir-Fried Vegetables &amp; Jasmine Rice</p>
-                </div>
-                
-            </div>
-            </div>
-            <a class="see-all" href="recipes.php">See All Recipes</a>
+            
+            <!-- <a class="see-all" href="recipes.php">See All Recipes</a> -->
 
             
         </section>

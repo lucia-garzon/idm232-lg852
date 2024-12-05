@@ -1446,3 +1446,158 @@ footer {
 .searchform i {
     font-size: 1.2rem;
 }
+
+
+
+/* Default state (search box hidden) */
+.search-box {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjusted positioning for better view */
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* When the search box is active (visible) */
+.search-box.active {
+    display: block;
+}
+
+/* Style the search input and button */
+.search-box input {
+    height: 35px;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 6px;
+    background-color: #353842;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.search-box button {
+    background-color: #353842;
+    color: white;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* Search icon styles */
+.search-icon {
+    font-size: 20px;
+    color: #353842;
+    cursor: pointer;
+}
+
+/* For mobile, search icon should be visible and the form hidden */
+@media (max-width: 768px) {
+    .search-box {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-icon {
+        display: inline-block;
+    }
+}
+
+/* Hide the search box when the nav is open */
+.nav.openNav .search-box {
+    display: none;
+}
+
+
+/* Hide the search form by default */
+.searchform-nav {
+    display: none;
+}
+
+/* Search icon visible only on mobile */
+.search-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* For screens larger than 768px (desktop) */
+@media (min-width: 768px) {
+    /* Show the search form in desktop */
+    .searchform-nav {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    /* Hide the search icon on desktop */
+    .search-icon {
+        display: none;
+    }
+}
+
+/* Show search form when active */
+.searchform-nav.active {
+    display: flex;
+}
+
+/* Styling for the input and button */
+.searchform-nav input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.searchform-nav button {
+    background-color: #353842;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Add some padding around the nav links and icons */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Default state for search box (hidden below nav) */
+.search-box {
+    display: none; /* Hidden by default */
+    margin-top: 10px; /* Space between the nav and the search box */
+    background-color: #353842;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* Search box visible when active */
+.search-box.active {
+    display: block;
+}
+
+/* On larger screens (desktop), search bar remains part of the nav */
+@media (min-width: 768px) {
+    .search-box {
+        display: none; /* Hide the search box on desktop */
+    }
+
+    .searchform-nav {
+        display: flex; /* Display search in nav on desktop */
+    }
+
+    .search-icon {
+        display: none; /* Hide search icon on desktop */
+    }
+}

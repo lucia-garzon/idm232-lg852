@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </a>
-            </article>
+        </article>
 
             <!-- Recipe 2 -->
             <article class="recipe-card">
