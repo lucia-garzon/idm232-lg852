@@ -647,11 +647,11 @@ main {
     margin-bottom: 30px;
 }
 
-.description {
+/* .description {
     max-height: 100px;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-}
+} */
 
 .show-more-btn {
     background: none;
