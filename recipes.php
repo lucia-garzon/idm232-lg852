@@ -56,10 +56,31 @@
                 <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
                 <button>Search</button>
             </form>
-            <button class="filter-btn">Filter ▼</button>
+            <form method="GET" action="recipes.php" class="filter-form">
+            
+            <label for="cuisine-filter">Filter by Cuisine:</label>
+            <select name="cuisine" id="cuisine-filter">
+                <option value="">All Cuisines</option>
+                <option value="Mexican-American">Mexican-American</option>
+                <option value="American">American</option>
+                <option value="Italian">Italian</option>
+                <option value="Chinese-American">Chinese-American</option>
+                <option value="Middle Eastern">Middle Eastern</option>
+                <option value="French">French</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Indian">Indian</option>
+                <option value="East Asian">East Asian</option>
+                <option value="Korean">Korean</option>
+                <option value="Southeast Asian">Southeast Asian</option>
+                <option value="Japanese">Japanese</option>
+            </select>
+            <button type="submit">Filter</button>
+</form>
+
+            <!-- <button class="filter-btn">Filter ▼</button>
             <a href="help.php" class="help-link">
                 <i class="help-icon uil uil-question-circle" aria-label="Help"></i>
-            </a>
+            </a> -->
         </section>
     
         <section class="recipe-grid">
