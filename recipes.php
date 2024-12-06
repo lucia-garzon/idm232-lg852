@@ -1,3 +1,20 @@
+<?php
+include './includes/db_connect.php'; // Include your database connection
+
+// Check if a cuisine filter is applied
+$cuisineFilter = isset($_GET['cuisine']) ? $connection->real_escape_string($_GET['cuisine']) : '';
+
+// Build the SQL query based on the filter
+if (!empty($cuisineFilter)) {
+    $sql = "SELECT * FROM recipes_data WHERE cuisine = '$cuisineFilter'";
+} else {
+    $sql = "SELECT * FROM recipes_data"; // Default query to display all recipes
+}
+
+$result = $connection->query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
