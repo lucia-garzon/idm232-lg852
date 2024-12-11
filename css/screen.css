@@ -641,6 +641,7 @@ main {
     align-items: center; /* Center the icon and text vertically */
     margin-top: 0.5rem; /* Space above each meta item */
     font-size: 1rem; /* Font size for meta text */
+    gap: 8px;
 }
 
 
