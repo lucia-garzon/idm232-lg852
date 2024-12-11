@@ -30,10 +30,10 @@
 //   nav.classList.remove("openNav");
 // });
 const nav = document.querySelector(".nav"),
-      navOpenBtn = document.querySelector(".navOpenBtn"),
-      navCloseBtn = document.querySelector(".navCloseBtn"),
-      searchIcon = document.querySelector("#searchIcon"),
-      searchBox = document.querySelector(".search-box");
+        navOpenBtn = document.querySelector(".navOpenBtn"),
+        navCloseBtn = document.querySelector(".navCloseBtn"),
+        searchIcon = document.querySelector("#searchIcon"),
+        searchBox = document.querySelector(".search-box");
 
 // Toggle mobile menu visibility
 navOpenBtn.addEventListener("click", () => {
