@@ -27,6 +27,12 @@ if (!empty($cuisineFilter)) {
     $sql .= " AND cuisine = '$cuisineFilter'";
 }
 
+// Exclude rows with empty or null values in any column
+$columns = ['recipe_name', 'title', 'subtitle', 'cuisine', 'cook_time', 'servings', 'description', 'ingredients', 'steps', 'main_image'];
+foreach ($columns as $column) {
+    $sql .= " AND $column IS NOT NULL AND $column != ''";
+}
+
 $result = $connection->query($sql);
 ?>
 
