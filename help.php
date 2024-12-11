@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help - The Secret Ingredient</title>
+    <link rel="icon" type="image/svg" href="images/hand-logo.svg">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
