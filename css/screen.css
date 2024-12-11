@@ -1768,3 +1768,10 @@ footer {
     margin: 2vh auto;
     height: auto;
 }
+.rounded-image {
+    display: block;
+    border-radius: var(--border-radius);
+    width: 64vw;
+    margin: 1rem auto;
+    height: auto;
+}

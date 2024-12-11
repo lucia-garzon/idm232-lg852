@@ -51,14 +51,26 @@
         <section>
             <h2 class="project-header">Process &amp; Insight</h2>
             <p>
-            I began this project by analyzing the user experience requirements and breaking the functionality into manageable components. My first step was designing the database schema to store recipe details effectively, including fields for recipe names, cuisine types, ingredients, steps, and images. This allowed me to visualize how data would flow from the database to the user interface.
-
+            I began this project by researching websites like Blue Apron to understand the design trends that resonate with millennials, the target audience for my recipe website. This research helped me define the overall website design, which led to the creation of my own branding—logo, colors, and typography—resulting in a cohesive style guide. The design choices were influenced by the clean, user-friendly approach of the sites I analyzed, and I aimed to reflect a modern and approachable aesthetic suitable for a recipe platform.
             </p>
+            <img alt="Style guide" src="graphics/style.png" class="rounded-image">
+
+            <p>
+            I then focused on analyzing the user experience requirements and breaking the functionality into manageable components. My first step was designing the database schema to store recipe details effectively, including fields for recipe names, cuisine types, ingredients, steps, and images. This allowed me to visualize how data would flow from the database to the user interface.            </p>
+            <img alt="Excel sheet" src="graphics/excel.png" class="rounded-image">
+
             
             <p>
             From there, I created wireframes to map out the user journey, focusing on simplicity and usability. I prioritized features like recipe search, filtering by cuisine, and a detailed recipe page that included clear instructions and visuals. Using PHP, I connected the database to dynamically display recipes based on user queries and selections.
             </p>
-            
+            <img alt="Wireframes" src="graphics/wireframes.png" class="rounded-image">
+
+            <p>
+            What was key thoughout this process was making sure my images and the paths for them clarified in my database were accurate and easy to maintain. 
+            </p>
+            <img alt="Images" src="graphics/images.png" class="rounded-image">
+
+
             <p>
                 Whether I was testing out changes myself through code or showing my progress to peers, I made sure to <b>ask questions, search for solutions online, and make iterative changes</b> based on feedback from others. 
             </p>
@@ -68,24 +80,25 @@
             <h2 class="project-header">The Solution
             </h2>
             <p>
-            The final product is a fully functional recipe website titled <i>The Secret Ingredient</i>. Users can browse recipes on a clean homepage, search for specific dishes, and filter recipes by cuisine. Each recipe page includes detailed descriptions, step-by-step instructions, and accompanying images for an immersive experience.
+            The final product is a fully functional recipe website titled <i>The Secret Ingredient</i>. Users can browse recipes on the homepage, search for specific dishes through Recipes, and filter recipes by cuisine. Each recipe page includes detailed descriptions, step-by-step instructions, and accompanying images for an immersive experience.
             </p>
 
             <p>
-            To enhance the user experience, I implemented a responsive design, ensuring the site works flawlessly on mobile, tablet, and desktop. The filtering system is intuitive, allowing users to quickly find recipes based on their preferences. The backend features secure CRUD operations, with prepared statements for database interactions, ensuring the application’s security and efficiency.
+            To enhance the user experience, I implemented a responsive design, ensuring the site works flawlessly on mobile, tablet, and desktop. The backend features secure CRUD operations, with prepared statements for database interactions, ensuring the application's security and efficiency.
             </p>
 
             <p>
-            One standout feature is the search functionality. Instead of relying solely on filters, users can search for keywords across the entire database, providing flexibility and ease of use.
+            One standout feature is the filter functionality. In addition to the search bar, users can filter by cuisine from Japanese food to Mexica-American, providing flexibility and ease of use. I chose to filter by cuisine as it is one of the main ways millenials browsing recipe websites search for food to eat. 
             </p>
-            
+            <img alt="Filter functionality" src="graphics/filter.png" class="rounded-image">
+
         </section>
 
         <section>
             <h2 class="project-header">The Results
             </h2>
             <p>
-            I'm proud of the outcome of this project. The website is not only visually appealing but also highly functional, demonstrating my ability to integrate server-side programming with user-centered design. The search and filter features work seamlessly, and the database efficiently handles all operations without errors.
+            I'm proud of the outcome of this project. The website is not only visually appealing but also highly functional, demonstrating my ability to integrate server-side programming with user-centered design. The search and filter features work seamlessly, and the database efficiently handles all operations effectively.
             </p>
             <p>
             This project gave me invaluable experience in building scalable web applications, managing databases, and implementing secure practices. If I were to improve the project further, I'd explore advanced filtering options, such as combining multiple criteria or adding user accounts to save favorite recipes.
