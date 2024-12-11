@@ -62,23 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <li><a class="nav-item" href="recipes.php">Recipes</a></li>
                 <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
-        
-            <!-- <i class="uil uil-search search-icon" id="searchIcon"></i>
-            <div class="search-box">
-                <i class="uil uil-search search-icon"></i>
-                <input type="text" placeholder="Search for recipes" />
-            </div> -->
-            <!-- <form class="searchform searchform-nav" action="search.php" method="post">
-                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
-                <button>Search</button>
-            </form> -->
-            <!-- <div class="search-container">
-                <i class="uil uil-search search-icon" id="searchIcon"></i>
-                <form class="searchform searchform-nav" id="searchForm" action="search.php" method="post">
-                    <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
-                    <button>Search</button>
-                </form>
-            </div> -->
 
         </nav>
     </header>
@@ -116,22 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     
         <section class="recipe-grid">
-        <!-- Repeat this block for each recipe card -->
-            <!-- <article class="recipe-card">
-                <a class="recipe-details-link" href="recipe-details.php">
-                    <figure class="recipe-image">
-                        <img src="images/placeholder.svg" alt="Recipe Image" loading="lazy">
-                    </figure>
-                    <div class="recipe-info">
-                        <h3 class="recipe-card-title">Title</h3>
-                        <p class="recipe-card-subtitle">Subtitle</p>
-                        <div class="recipe-time">
-                            <i class="uil uil-clock"></i> 
-                            <p>X MIN</p>
-                        </div>
-                    </div>
-                </a>
-            </article> -->
+            
 
         <!-- Recipe 1 -->
         <article class="recipe-card">
