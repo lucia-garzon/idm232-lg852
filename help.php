@@ -49,7 +49,7 @@
 </div>
 
         <div class="help-actions">
-            <a href="index.php" class="btn-primary">Back to Home</a>
+            <a href="casestudy.php" class="btn-primary">Explore Case Study</a>
             <a href="recipes.php" class="btn-secondary">Explore Recipes</a>
 </div>
     </main>

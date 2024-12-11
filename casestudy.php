@@ -89,7 +89,7 @@
             </p>
 
             <p>
-            One standout feature is the filter functionality. In addition to the search bar, users can filter by cuisine from Japanese food to Mexica-American, providing flexibility and ease of use. I chose to filter by cuisine as it is one of the main ways millenials browsing recipe websites search for food to eat. 
+            One standout feature is the filter functionality. In addition to the search bar, users can filter by cuisine from Japanese food to Mexican-American, providing flexibility and ease of use. I chose to filter by cuisine as it is one of the main ways millenials browsing recipe websites search for food to eat. 
             </p>
             <img alt="Filter functionality" src="graphics/filter.png" class="rounded-image">
 
