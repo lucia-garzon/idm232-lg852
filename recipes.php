@@ -1,18 +1,33 @@
 <?php
-include './includes/db_connect.php'; // Include your database connection
 
-// Check if a cuisine filter is applied
-$cuisineFilter = isset($_GET['cuisine']) ? $connection->real_escape_string($_GET['cuisine']) : '';
+include './includes/db_connect.php';
 
-// Build the SQL query based on the filter
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+}
+
+// Initialize variables for search and filters
+$searchTerm = "";
+$cuisineFilter = "";
+
+// Check if search form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $searchTerm = isset($_POST['usersearch']) ? $connection->real_escape_string($_POST['usersearch']) : "";
+    $cuisineFilter = isset($_POST['cuisine_filter']) ? $connection->real_escape_string($_POST['cuisine_filter']) : "";
+}
+
+// SQL query to search and filter the recipes_data table
+$sql = "SELECT * FROM recipes_data WHERE 1=1";
+
+if (!empty($searchTerm)) {
+    $sql .= " AND (recipe_name LIKE '%$searchTerm%' OR title LIKE '%$searchTerm%' OR cuisine LIKE '%$searchTerm%')";
+}
+
 if (!empty($cuisineFilter)) {
-    $sql = "SELECT * FROM recipes_data WHERE cuisine = '$cuisineFilter'";
-} else {
-    $sql = "SELECT * FROM recipes_data"; // Default query to display all recipes
+    $sql .= " AND cuisine = '$cuisineFilter'";
 }
 
 $result = $connection->query($sql);
-
 ?>
 
 <!DOCTYPE html>
@@ -62,43 +77,33 @@ $result = $connection->query($sql);
             <h1>Recipes</h1>
             <p>Savor Every Bite, One Meal at a Time</p>
         </section>
-        <section class="search-filter">
-        </section>
-        <section class="search-filter">
-            <!-- <div class="search-bar">
-                <input type="text" placeholder="Search for recipes" />
-                <button class="search-icon"><img src="images/search-icon.svg" alt="Search Icon"></button>
-            </div> -->
-            <form class="searchform search-bar" action="search.php" method="post">
-                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
-                <button>Search</button>
-            </form>
-            <form method="GET" action="recipes.php" class="filter-form">
-            
-            <label for="cuisine-filter">Filter by Cuisine:</label>
-            <select name="cuisine" id="cuisine-filter">
-                <option value="">All Cuisines</option>
-                <option value="Mexican-American">Mexican-American</option>
-                <option value="American">American</option>
-                <option value="Italian">Italian</option>
-                <option value="Chinese-American">Chinese-American</option>
-                <option value="Middle Eastern">Middle Eastern</option>
-                <option value="French">French</option>
-                <option value="Mediterranean">Mediterranean</option>
-                <option value="Indian">Indian</option>
-                <option value="East Asian">East Asian</option>
-                <option value="Korean">Korean</option>
-                <option value="Southeast Asian">Southeast Asian</option>
-                <option value="Japanese">Japanese</option>
-            </select>
-            <button type="submit">Filter</button>
-</form>
 
-            <!-- <button class="filter-btn">Filter ▼</button>
+        <section class="search-filter">
+            <form class="searchform search-bar" action="search.php" method="post">
+                <input id="search" type="text" name="usersearch" placeholder="Search for recipes" value="<?php echo htmlspecialchars($searchTerm); ?>">
+                <select name="cuisine_filter" class="filter-dropdown">
+                    <option value="">All Cuisines</option>
+                    <option value="Mexican-American" <?php if ($cuisineFilter === 'Mexican-American') echo 'selected'; ?>>Mexican-American</option>
+                    <option value="American" <?php if ($cuisineFilter === 'American') echo 'selected'; ?>>American</option>
+                    <option value="Italian" <?php if ($cuisineFilter === 'Italian') echo 'selected'; ?>>Italian</option>
+                    <option value="Chinese-American" <?php if ($cuisineFilter === 'Chinese-American') echo 'selected'; ?>>Chinese-American</option>
+                    <option value="Middle Eastern" <?php if ($cuisineFilter === 'Middle Eastern') echo 'selected'; ?>>Middle Eastern</option>
+                    <option value="French" <?php if ($cuisineFilter === 'French') echo 'selected'; ?>>French</option>
+                    <option value="Mediterranean" <?php if ($cuisineFilter === 'Mediterranean') echo 'selected'; ?>>Mediterranean</option>
+                    <option value="Indian" <?php if ($cuisineFilter === 'Indian') echo 'selected'; ?>>Indian</option>
+                    <option value="East Asian" <?php if ($cuisineFilter === 'East Asian') echo 'East Asian'; ?>>French</option>
+                    <option value="Korean" <?php if ($cuisineFilter === 'Korean') echo 'selected'; ?>>Korean</option>
+                    <option value="Southeast Asian" <?php if ($cuisineFilter === 'Southeast Asian') echo 'selected'; ?>>Southeast Asian</option>
+                    <option value="Japanese" <?php if ($cuisineFilter === 'Japanese') echo 'selected'; ?>>Japanese</option>
+                </select>
+                <button type="submit">Search</button>
+                
+            </form>
             <a href="help.php" class="help-link">
                 <i class="help-icon uil uil-question-circle" aria-label="Help"></i>
-            </a> -->
+                </a>
         </section>
+    
     
         <section class="recipe-grid">
         <!-- Repeat this block for each recipe card -->
