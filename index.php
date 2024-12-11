@@ -77,12 +77,7 @@ $result = $connection->query($sql);
             </div>
             <a class="hero-btn" href="recipes.php">More Recent Recipes</a>
         </section>
-        <!-- <section class="hero">
-            <div class="hero-content">
-                <img class="hero-image" src="images/index-tacos.jpg" alt="Picture of tacos">
-                <h1 class="overlay-text">Hearty meals for every kitchen</h1>
-            </div>
-        </section> -->
+        
         <!-- <section class="quick-filters">
             <div class="filters-grid">
                 <div class="filter-circle">
@@ -124,6 +119,7 @@ $result = $connection->query($sql);
                     <div class="index-card-content">
                         <h3>Cheesy Enchiladas Rojas</h3>
                         <p>with Mushrooms & Kale</p>
+                    </div>
                     </a>
                 </div>
             </div>
@@ -134,10 +130,8 @@ $result = $connection->query($sql);
                     <div class="index-card-content">
                         <h3>Salmon Honey Glazed Carrots</h3>
                         <p>with Lemon Saffron Yogurt Sauce</p>
+                    </div>
                     </a>
-                </div>
-            
-                
             </div>
             <div class="index-card">
                     <a class="recipe-details-link" href="recipe-details.php?id=8">
@@ -145,8 +139,8 @@ $result = $connection->query($sql);
                     <div class="index-card-content">
                         <h3>Crispy Fish Sandwiches</h3>
                         <p>with Tartar Sauce & Roasted Sweet Potato Wedges</p>
+                        </div>
                     </a>
-                </div>
             </div>
             
             <!-- <a class="see-all" href="recipes.php">See All Recipes</a> -->
