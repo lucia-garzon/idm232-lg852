@@ -1,6 +1,10 @@
 <?php
 include './includes/db_connect.php';
 
+if (!isset($connection)) {
+    die("Database connection not established.");
+}
+
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 }
@@ -38,13 +42,21 @@ if (!empty($cuisineFilter)) {
     $values[] = $cuisineFilter;
 }
 
+
+
 // Prepare the statement
 $stmt = $connection->prepare($sql);
 
-// Bind the parameters dynamically based on the types and values
-if (!empty($types)) {
+// Check $stmt before proceeding
+if (!$stmt) {
+    die("Statement preparation failed: " . $connection->error);
+}
+
+// Bind the parameters based on the types and values. Ensure parameters are added only if $values is non-empty.
+if (!empty($types) && !empty($values)) {
     $stmt->bind_param($types, ...$values);
 }
+
 
 // Execute the prepared statement
 $stmt->execute();
@@ -69,7 +81,7 @@ $result = $stmt->get_result();
     <header>
     <nav class="nav">
         <i class="uil uil-bars navOpenBtn"></i>
-            <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
+            <a href="index.php"><img class="logo" alt="Recipe website logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
                 <li><i class="uil uil-times navCloseBtn"></i></li>
@@ -90,7 +102,7 @@ $result = $stmt->get_result();
 
         <section class="search-filter">
             <form class="searchform search-bar" action="search.php" method="post">
-                <input id="search" type="text" name="usersearch" placeholder="Search for recipes" value="<?php echo htmlspecialchars($searchTerm); ?>">
+                <input id="search" type="text" name="usersearch" placeholder="Search for recipes" aria-label="Search for recipes" value="<?php echo htmlspecialchars($searchTerm); ?>">
                 <select name="cuisine_filter" class="filter-dropdown">
                     <option value="">All Cuisines</option>
                     <option value="Mexican-American" <?php if ($cuisineFilter === 'Mexican-American') echo 'selected'; ?>>Mexican-American</option>
@@ -101,7 +113,7 @@ $result = $stmt->get_result();
                     <option value="French" <?php if ($cuisineFilter === 'French') echo 'selected'; ?>>French</option>
                     <option value="Mediterranean" <?php if ($cuisineFilter === 'Mediterranean') echo 'selected'; ?>>Mediterranean</option>
                     <option value="Indian" <?php if ($cuisineFilter === 'Indian') echo 'selected'; ?>>Indian</option>
-                    <option value="East Asian" <?php if ($cuisineFilter === 'East Asian') echo 'East Asian'; ?>>East Asian</option>
+                    <option value="East Asian" <?php if ($cuisineFilter === 'East Asian') echo 'selected'; ?>>East Asian</option>
                     <option value="Korean" <?php if ($cuisineFilter === 'Korean') echo 'selected'; ?>>Korean</option>
                     <option value="Southeast Asian" <?php if ($cuisineFilter === 'Southeast Asian') echo 'selected'; ?>>Southeast Asian</option>
                     <option value="Japanese" <?php if ($cuisineFilter === 'Japanese') echo 'selected'; ?>>Japanese</option>
@@ -143,7 +155,9 @@ $result = $stmt->get_result();
 
             // Close the database connection
             $connection->close();
-            ?>
+
+        ?>
+            
         </section>
 
     </main>
