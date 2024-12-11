@@ -72,28 +72,12 @@ $result = $stmt->get_result();
             <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
-                <i class="uil uil-times navCloseBtn"></i>
+                <li><i class="uil uil-times navCloseBtn"></i></li>
                 <li><a class="nav-item" href="index.php">Home</a></li>
                 <li><a class="nav-item" href="recipes.php">Recipes</a></li>
                 <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
-            <!-- <i class="uil uil-search search-icon" id="searchIcon"></i>
-            <div class="search-box">
-                <i class="uil uil-search search-icon"></i>
-                <input type="text" placeholder="Search for recipes" />
-            </div> -->
-            <!-- <form class="searchform searchform-nav" action="search.php" method="post">
-                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
-                <button>Search</button>
-            </form> -->
-            <!-- <div class="search-container">
-                <i class="uil uil-search search-icon" id="searchIcon"></i>
-                <form class="searchform searchform-nav" id="searchForm" action="search.php" method="post">
-                    <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
-                    <button>Search</button>
-                </form>
-            </div> -->
 
         </nav>
     </header>
@@ -188,25 +172,25 @@ $result = $stmt->get_result();
                     </a>
                 </li>
                 <li>
-                    <img src="images/pinterest.svg" class="socials-logo" alt="Instagram logo">
+                    <img src="images/pinterest.svg" class="socials-logo" alt="Pinterest logo">
                     <a href="https://www.pinterest.com/" target="_blank" class="link">
                         Pinterest
                     </a>
                 </li>
                 <li>
-                    <img src="images/tiktok.svg" class="socials-logo" alt="Instagram logo">
+                    <img src="images/tiktok.svg" class="socials-logo" alt="TikTok logo">
                     <a href="https://www.tiktok.com/" target="_blank" class="link">
                         TikTok
                     </a>
                 </li>
                 <li>
-                    <img src="images/youtube.svg" class="socials-logo" alt="Instagram logo">
+                    <img src="images/youtube.svg" class="socials-logo" alt="Youtube logo">
                     <a href="https://www.youtube.com/" target="_blank" class="link">
                         Youtube
                     </a>
                 </li>
                 <li> 
-                    <img src="images/x.svg" class="socials-logo" alt="Instagram logo">
+                    <img src="images/x.svg" class="socials-logo" alt="X logo">
                     <a href="https://www.x.com/" target="_blank" class="link">
                         X
                     </a>

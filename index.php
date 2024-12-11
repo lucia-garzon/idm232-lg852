@@ -18,47 +18,19 @@ $result = $connection->query($sql);
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 <body>
-    <!-- <header>
-        <a href="index.html"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
-        <nav class="nav">
-            <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            </ul>
-        <div class="search-icon">
-            <img src="images/search-icon.svg" alt="Search Icon">
-        </div>
-        </nav>
-        
-    </header> -->
     <header>
     <nav class="nav">
         <i class="uil uil-bars navOpenBtn"></i>
             <a href="index.php"><img class="logo" alt="logo" src="images/logo-recipe.svg"></a>
 
             <ul class="nav-links">
-                <i class="uil uil-times navCloseBtn"></i>
+                <li><i class="uil uil-times navCloseBtn"></i></li>
                 <li><a class="nav-item" href="index.php">Home</a></li>
                 <li><a class="nav-item" href="recipes.php">Recipes</a></li>
                 <li><a class="nav-item" href="help.php">Help</a></li>
             </ul>
         
-            <!-- <i class="uil uil-search search-icon" id="searchIcon"></i>
-            <div class="search-box">
-                <i class="uil uil-search search-icon"></i>
-                <input type="text" placeholder="Search for recipes" />
-            </div> -->
-            <!-- <form class="searchform searchform-nav" action="search.php" method="post">
-                <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
-                <button>Search</button>
-            </form> -->
-            <!-- <div class="search-container">
-                <i class="uil uil-search search-icon" id="searchIcon"></i>
-                <form class="searchform searchform-nav" id="searchForm" action="search.php" method="post">
-                    <input id="search" type="text" name="usersearch" placeholder="Search for recipes">
-                    <button>Search</button>
-                </form>
-            </div> -->
+            
 
         </nav>
     </header>
@@ -182,58 +154,57 @@ $result = $connection->query($sql);
             
         </section>
         <footer>
-            <div class="footer-content">
-            <div class="footer-info">
-                <div class="footer-logo"> 
-                    <img class="footer-img" src="images/hand-logo.svg" alt="Hand with heart above">
-                </div>
-                <h3 class="footer-header">The secret ingredient? Love!</h3>
-                <p class="footer-text">Providing delicious meals for all families. We're here to help you make every meal a special occasion.</p>
+        <div class="footer-content">
+        <div class="footer-info">
+            <div class="footer-logo"> 
+                <img class="footer-img" src="images/hand-logo.svg" alt="Hand with heart above">
             </div>
-            <div class="socials">
-                <h3 class="footer-header">Follow along</h3>
-                <ul>
-                    <li>
-                        <img src="images/facebook.svg" class="socials-logo" alt="Facebook logo">
-                        <a href="https://www.facebook.com/" target="_blank" class="link">
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <img src="images/instagram.svg" class="socials-logo" alt="Instagram logo">
-                        <a href="https://www.instagram.com/" target="_blank" class="link">
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <img src="images/pinterest.svg" class="socials-logo" alt="Instagram logo">
-                        <a href="https://www.pinterest.com/" target="_blank" class="link">
-                            Pinterest
-                        </a>
-                    </li>
-                    <li>
-                        <img src="images/tiktok.svg" class="socials-logo" alt="Instagram logo">
-                        <a href="https://www.tiktok.com/" target="_blank" class="link">
-                            TikTok
-                        </a>
-                    </li>
-                    <li>
-                        <img src="images/youtube.svg" class="socials-logo" alt="Instagram logo">
-                        <a href="https://www.youtube.com/" target="_blank" class="link">
-                            Youtube
-                        </a>
-                    </li>
-                    <li> 
-                        <img src="images/x.svg" class="socials-logo" alt="Instagram logo">
-                        <a href="https://www.x.com/" target="_blank" class="link">
-                            X
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-            
-        </footer>
+            <h3 class="footer-header">The secret ingredient? Love!</h3>
+            <p class="footer-text">Providing delicious meals for all families. We're here to help you make every meal a special occasion.</p>
+        </div>
+        <div class="socials">
+            <h3 class="footer-header">Follow along</h3>
+            <ul>
+                <li>
+                    <img src="images/facebook.svg" class="socials-logo" alt="Facebook logo">
+                    <a href="https://www.facebook.com/" target="_blank" class="link">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <img src="images/instagram.svg" class="socials-logo" alt="Instagram logo">
+                    <a href="https://www.instagram.com/" target="_blank" class="link">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <img src="images/pinterest.svg" class="socials-logo" alt="Pinterest logo">
+                    <a href="https://www.pinterest.com/" target="_blank" class="link">
+                        Pinterest
+                    </a>
+                </li>
+                <li>
+                    <img src="images/tiktok.svg" class="socials-logo" alt="TikTok logo">
+                    <a href="https://www.tiktok.com/" target="_blank" class="link">
+                        TikTok
+                    </a>
+                </li>
+                <li>
+                    <img src="images/youtube.svg" class="socials-logo" alt="Youtube logo">
+                    <a href="https://www.youtube.com/" target="_blank" class="link">
+                        Youtube
+                    </a>
+                </li>
+                <li> 
+                    <img src="images/x.svg" class="socials-logo" alt="X logo">
+                    <a href="https://www.x.com/" target="_blank" class="link">
+                        X
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </footer>
     </main>
     <script src="js/script.js"></script>
 </body>
