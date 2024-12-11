@@ -136,6 +136,7 @@
             // Close the database connection
             $connection->close();
             ?>
+        </section>
 
     </main>
     <footer>
