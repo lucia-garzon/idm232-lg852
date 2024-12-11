@@ -87,7 +87,7 @@
                 <img class="footer-img" src="images/hand-logo.svg" alt="Hand with heart above">
             </div>
             <h3 class="footer-header">The secret ingredient? Love!</h3>
-            <p class="footer-text">Providing delicious meals for all families. This is filler text about the website and our mission.</p>
+            <p class="footer-text">Providing delicious meals for all families. We're here to help you make every meal a special occasion.</p>
         </div>
         <div class="socials">
             <h3 class="footer-header">Follow along</h3>

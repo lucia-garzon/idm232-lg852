@@ -1,5 +1,4 @@
 <?php
-
 include './includes/db_connect.php';
 
 if ($connection->connect_error) {
@@ -9,31 +8,36 @@ if ($connection->connect_error) {
 // Initialize variables for search and filters
 $searchTerm = "";
 $cuisineFilter = "";
+$message = "";
 
 // Check if search form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $searchTerm = isset($_POST['usersearch']) ? $connection->real_escape_string($_POST['usersearch']) : "";
-    $cuisineFilter = isset($_POST['cuisine_filter']) ? $connection->real_escape_string($_POST['cuisine_filter']) : "";
+    $searchTerm = isset($_POST['usersearch']) ? $_POST['usersearch'] : "";
+    $cuisineFilter = isset($_POST['cuisine_filter']) ? $_POST['cuisine_filter'] : "";
+
+    // Check if search term is empty
+    if (empty($searchTerm)) {
+        $message = "Please enter a search term.";
+    } else {
+        // SQL query to search and filter the recipes_data table
+        $sql = "SELECT * FROM recipes_data WHERE 1=1";
+
+        if (!empty($searchTerm)) {
+            $sql .= " AND (recipe_name LIKE '%$searchTerm%' OR title LIKE '%$searchTerm%' OR cuisine LIKE '%$searchTerm%')";
+        }
+
+        if (!empty($cuisineFilter)) {
+            $sql .= " AND cuisine = '$cuisineFilter'";
+        }
+
+        $result = $connection->query($sql);
+
+        // Check if any results were returned
+        if ($result->num_rows === 0) {
+            $message = "No recipes found matching your search or filter criteria.";
+        }
+    }
 }
-
-// SQL query to search and filter the recipes_data table
-$sql = "SELECT * FROM recipes_data WHERE 1=1";
-
-if (!empty($searchTerm)) {
-    $sql .= " AND (recipe_name LIKE '%$searchTerm%' OR title LIKE '%$searchTerm%' OR cuisine LIKE '%$searchTerm%')";
-}
-
-if (!empty($cuisineFilter)) {
-    $sql .= " AND cuisine = '$cuisineFilter'";
-}
-
-// Exclude rows with empty or null values in any column
-$columns = ['recipe_name', 'title', 'subtitle', 'cuisine', 'cook_time', 'servings', 'description', 'ingredients', 'steps', 'main_image'];
-foreach ($columns as $column) {
-    $sql .= " AND $column IS NOT NULL AND $column != ''";
-}
-
-$result = $connection->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -275,7 +279,7 @@ $result = $connection->query($sql);
                 <img class="footer-img" src="images/hand-logo.svg" alt="Hand with heart above">
             </div>
             <h3 class="footer-header">The secret ingredient? Love!</h3>
-            <p class="footer-text">Providing delicious meals for all families. This is filler text about the website and our mission.</p>
+            <p class="footer-text">Providing delicious meals for all families. We're here to help you make every meal a special occasion.</p>
         </div>
         <div class="socials">
             <h3 class="footer-header">Follow along</h3>
