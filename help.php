@@ -32,7 +32,7 @@
             <p>If you have questions, you've come to the right place!</p>
         </section>
 
-        <section class="help-topics">
+        <div class="help-topics">
             <article class="help-topic">
                 <i class="uil uil-search icon"></i>
                 <h3>How to Search for Recipes</h3>
@@ -56,12 +56,12 @@
                 <h3>Contact Us</h3>
                 <p>Email us for questions.</p>
             </article>
-        </section>
+</div>
 
-        <section class="help-actions">
+        <div class="help-actions">
             <a href="index.php" class="btn-primary">Back to Home</a>
             <a href="recipes.php" class="btn-secondary">Explore Recipes</a>
-        </section>
+</div>
     </main>
 
     
