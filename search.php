@@ -1,35 +1,59 @@
 <?php
-    
-    include './includes/db_connect.php';
-    
-    
-    if ($connection->connect_error) {
-        die("Connection failed: " . $connection->connect_error);
-    }
-    
-    // Initialize variables for search and filters
-    $searchTerm = "";
-    $cuisineFilter = "";
-    
-    // Check if search form is submitted
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $searchTerm = isset($_POST['usersearch']) ? $connection->real_escape_string($_POST['usersearch']) : "";
-        $cuisineFilter = isset($_POST['cuisine_filter']) ? $connection->real_escape_string($_POST['cuisine_filter']) : "";
-    }
-    
-    // SQL query to search and filter the recipes_data table
-    $sql = "SELECT * FROM recipes_data WHERE 1=1";
-    
-    if (!empty($searchTerm)) {
-        $sql .= " AND (recipe_name LIKE '%$searchTerm%' OR title LIKE '%$searchTerm%' OR cuisine LIKE '%$searchTerm%')";
-    }
-    
-    if (!empty($cuisineFilter)) {
-        $sql .= " AND cuisine = '$cuisineFilter'";
-    }
-    
-    $result = $connection->query($sql);
+include './includes/db_connect.php';
+
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+}
+
+// Initialize variables for search and filters
+$searchTerm = "";
+$cuisineFilter = "";
+
+// Check if search form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $searchTerm = isset($_POST['usersearch']) ? $_POST['usersearch'] : "";
+    $cuisineFilter = isset($_POST['cuisine_filter']) ? $_POST['cuisine_filter'] : "";
+}
+
+// Prepare the SQL query with placeholders
+$sql = "SELECT * FROM recipes_data WHERE 1=1";
+
+// Prepare the types for bind_param
+$types = '';
+$values = [];
+
+// Add conditions to the query if search term is present
+if (!empty($searchTerm)) {
+    $sql .= " AND (recipe_name LIKE ? OR title LIKE ? OR cuisine LIKE ?)";
+    $types .= 'sss'; // Three string parameters
+    $values[] = "%" . $searchTerm . "%";
+    $values[] = "%" . $searchTerm . "%";
+    $values[] = "%" . $searchTerm . "%";
+}
+
+// Add cuisine filter to the query if specified
+if (!empty($cuisineFilter)) {
+    $sql .= " AND cuisine = ?";
+    $types .= 's'; // One string parameter
+    $values[] = $cuisineFilter;
+}
+
+// Prepare the statement
+$stmt = $connection->prepare($sql);
+
+// Bind the parameters dynamically based on the types and values
+if (!empty($types)) {
+    $stmt->bind_param($types, ...$values);
+}
+
+// Execute the prepared statement
+$stmt->execute();
+
+// Get the result
+$result = $stmt->get_result();
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
