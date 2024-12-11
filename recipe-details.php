@@ -63,7 +63,7 @@
     </section>
 
     <!-- Recipe Image Section -->
-    <section class="recipe-main-info">
+    <div class="recipe-main-info">
         <div class="main-image">
             <img class="recipe-details-image" src="<?php echo $recipe['main_image']; ?>" alt="Recipe Image">
         </div>
@@ -81,17 +81,17 @@
                 <?php echo htmlspecialchars($recipe['servings']); ?> 
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Description Section with Show More/Show Less -->
-    <section class="description-section">
+    <div class="description-section">
         <div class="description">
             <p class="description-content">
                 <?php echo nl2br(htmlspecialchars($recipe['description'])); ?>
             </p>
         </div>
         <!-- <button class="show-more-btn">Show more</button> -->
-    </section>
+    </div>
 
     <!-- Ingredients Section -->
     <section class="ingredients-section">
