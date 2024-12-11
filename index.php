@@ -1,4 +1,6 @@
 <?php
+
+
 // Include the database connection
 include './includes/db_connect.php';
 

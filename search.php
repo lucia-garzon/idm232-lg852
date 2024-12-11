@@ -1,4 +1,5 @@
 <?php
+
 include './includes/db_connect.php';
 
 if (!isset($connection)) {
