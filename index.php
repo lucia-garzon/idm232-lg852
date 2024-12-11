@@ -122,9 +122,7 @@ $result = $connection->query($sql);
                     </div>
                     </a>
                 </div>
-            </div>
-
-            <div class="index-card">
+                <div class="index-card">
                     <a class="recipe-details-link" href="recipe-details.php?id=25">
                     <img class="index-card-image" src="images/25-salmonhoney/25-salmonhoney-hero.webp" alt="Recipe Card 2">
                     <div class="index-card-content">
@@ -132,16 +130,19 @@ $result = $connection->query($sql);
                         <p>with Lemon Saffron Yogurt Sauce</p>
                     </div>
                     </a>
+                </div>
+                <div class="index-card">
+                        <a class="recipe-details-link" href="recipe-details.php?id=8">
+                        <img class="index-card-image" src="images/8-crispyfishsandwiches/8-crispyfishsandwiches-hero.webp" alt="Recipe Card 3">
+                        <div class="index-card-content">
+                            <h3>Crispy Fish Sandwiches</h3>
+                            <p>with Tartar Sauce & Roasted Sweet Potato Wedges</p>
+                            </div>
+                        </a>
+                </div>
             </div>
-            <div class="index-card">
-                    <a class="recipe-details-link" href="recipe-details.php?id=8">
-                    <img class="index-card-image" src="images/8-crispyfishsandwiches/8-crispyfishsandwiches-hero.webp" alt="Recipe Card 3">
-                    <div class="index-card-content">
-                        <h3>Crispy Fish Sandwiches</h3>
-                        <p>with Tartar Sauce & Roasted Sweet Potato Wedges</p>
-                        </div>
-                    </a>
-            </div>
+
+        
             
             <!-- <a class="see-all" href="recipes.php">See All Recipes</a> -->
 
