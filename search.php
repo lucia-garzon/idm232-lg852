@@ -93,7 +93,7 @@
                     <option value="French" <?php if ($cuisineFilter === 'French') echo 'selected'; ?>>French</option>
                     <option value="Mediterranean" <?php if ($cuisineFilter === 'Mediterranean') echo 'selected'; ?>>Mediterranean</option>
                     <option value="Indian" <?php if ($cuisineFilter === 'Indian') echo 'selected'; ?>>Indian</option>
-                    <option value="East Asian" <?php if ($cuisineFilter === 'East Asian') echo 'East Asian'; ?>>French</option>
+                    <option value="East Asian" <?php if ($cuisineFilter === 'East Asian') echo 'East Asian'; ?>>East Asian</option>
                     <option value="Korean" <?php if ($cuisineFilter === 'Korean') echo 'selected'; ?>>Korean</option>
                     <option value="Southeast Asian" <?php if ($cuisineFilter === 'Southeast Asian') echo 'selected'; ?>>Southeast Asian</option>
                     <option value="Japanese" <?php if ($cuisineFilter === 'Japanese') echo 'selected'; ?>>Japanese</option>
