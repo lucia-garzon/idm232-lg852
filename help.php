@@ -43,20 +43,9 @@
             <article class="help-topic">
                 <i class="uil uil-filter icon"></i>
                 <h3>How to Filter Recipes</h3>
-                <p>Click the filter button on the recipes page to sort recipes by category, cooking time, or dietary preference.</p>
+                <p>Click the filter button on the recipes page to sort recipes by cuisine. Enjoy meals from various countries!</p>
             </article>
 
-            <article class="help-topic">
-                <i class="uil uil-heart icon"></i>
-                <h3>Saving Your Favorite Recipes</h3>
-                <p>Logged-in users can save recipes to their favorites for easy access later.</p>
-            </article>
-
-            <article class="help-topic">
-                <i class="uil uil-phone icon"></i>
-                <h3>Contact Us</h3>
-                <p>Email us for questions.</p>
-            </article>
 </div>
 
         <div class="help-actions">
